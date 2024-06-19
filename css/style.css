@@ -333,6 +333,69 @@ body {
   background-color: #0B4F6C;
 }
 
+/* CTA Section */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cta-container {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cta-text-box {
+  background-color: #fff;
+  padding: 6rem;
+}
+
+.cta-heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-heading-box h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cta-heading-box .cta-social {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cta-social .cta-icon {
+  text-align: center;
+  line-height: 1.7;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  border-radius: 50%;
+}
+
+.cta-img-box img {
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
