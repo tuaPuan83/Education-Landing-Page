@@ -21,6 +21,31 @@ body {
   padding: 0 3.2rem;
 }
 
+.subheading {
+  font-size: 1.5rem;
+  color: #01BAEF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 5rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #757575;
+}
+
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -223,13 +248,98 @@ body {
 
 /* Course Section */
 
-.section-meals {
+.section-course {
   padding: 9.6rem 0;
+  background-color: #FBFBFF;
 }
 
-.course-img {
+.course-card {
+  background-color: #fff;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-card-img img {
   width: 100%;
 }
+
+.course-card-detail {
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-heading {
+  font-size: 2rem;
+}
+
+.tag {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+}
+
+.tag.drawing {
+  background-color: #d90368;
+  color: #fff;
+}
+
+.tag.design {
+  background-color: #ffd400;
+  color: #000;
+}
+
+.tag.tech {
+  background-color: #20bf55;
+  color: #fff;
+}
+
+.card-body {
+  font-size: 1.3rem;
+  color: #757575;
+  line-height: 1.3;
+}
+
+.course-btn:link,
+.course-btn:visited {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 2rem 4rem;
+  background-color: #01BAEF;
+  transition: all .3s;
+}
+
+.course-btn:hover,
+.course-btn:active {
+  background-color: #0B4F6C;
+}
+
+
+
+
+
+
+
+
 
 
 
