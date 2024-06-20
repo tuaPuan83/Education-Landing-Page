@@ -63,6 +63,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .heading-primary {
   font-size: 5rem;
   font-weight: 700;
@@ -75,12 +79,13 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block; 
-  font-size: 2rem; 
+  font-size: 1.5rem; 
   padding: 1.6rem 3.2rem;
   border-radius: 15px;
   text-decoration: none;
   font-weight: 400;
   transition: all .6s;
+  text-transform: uppercase;
 }
 
 .btn-primary:link,
@@ -206,7 +211,13 @@ body {
 
 
 .hero-img {
+  width: 100%;
   display: block;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
 }
 
 .margin-right-sm {
@@ -216,7 +227,7 @@ body {
 .students {
   display: flex;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
   gap: 1.6rem;
 }
 
@@ -350,7 +361,10 @@ body {
 
 .cta-text-box {
   background-color: #fff;
-  padding: 6rem;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cta-heading-box {
@@ -385,6 +399,162 @@ body {
   width: 100%;
   display: block;
 }
+
+form {
+  margin-top: 2rem;
+}
+
+.username {
+  margin-bottom: 1.5rem;
+}
+
+.password {
+  margin-bottom: 2rem;
+}
+
+.username,
+.password {
+  display: flex;
+  flex-direction: column;
+}
+
+.username label,
+.password label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.username input,
+.password input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  background-color: #f1f1f1;
+  padding: 1rem .5rem;
+}
+
+.username input::placeholder,
+.password input::placeholder {
+  color: #d6d6d6;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 1.3rem .5rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #01BAEF;
+  color: #FBFBFF;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.cfpassword {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #d90368;
+}
+
+.fpassword {
+  color: #757575;
+}
+
+/* Footer Section */
+
+.footer {
+  background-color: #0B4F6C;
+  padding: 9.6rem 0;
+  border-top: 1px solid #01BAEF;
+}
+
+.logo-col a {
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 3rem;
+  color: #01BAEF;
+}
+
+.footer-icon-name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+.footer-list {
+  margin-top: 1.5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-list .footer-social {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+.contacts {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contacts p {
+  font-size: 1.3rem;
+  color: #f1f1f1;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.footer-nav-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-nav-list li {
+  list-style: none;
+}
+
+.footer-nav-list li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #f1f1f1;
+}
+
 
 
 
