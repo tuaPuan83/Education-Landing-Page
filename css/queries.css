@@ -1,0 +1,109 @@
+@media (max-width: 60em) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 48em) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header .fa-bars {
+        transition: all .3s;
+        display: block;
+    }
+
+    .fa-times {
+        transition: all .3s;
+        transform: rotate(180deg);
+    }
+
+
+    .main-nav {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        padding: 2rem 0;
+        background-color: #FBFBFF;
+    }
+
+    .main-nav-list li {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .main-nav-list li .main-nav-link {
+        font-size: 2rem;
+    }
+
+    .main-nav-toggle {
+        top: 9rem;
+        opacity: 1;
+        
+    }
+    
+}
+
+@media (max-width: 27em) {
+
+    html {
+        font-size: 40%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
+
+    .heading-primary {
+        font-size: 4rem;
+    }
+
+    .students {
+        display: none;
+    }
+
+    .hero-img-box {
+        display: none;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box {
+        display: none;
+    }
+
+    .footer .container.grid.grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 23.4em) {
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

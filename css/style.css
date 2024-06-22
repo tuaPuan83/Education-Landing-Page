@@ -6,6 +6,8 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -121,8 +123,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 9.6rem;  /* Define height to make sticky nav */
-  padding: 0 2.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 2%;
+  z-index: 10000;
 }
 
 .header-logo a {
@@ -181,6 +187,12 @@ body {
   background: #20BF55;
 }
 
+.header .fa-bars {
+  font-size: 3rem;
+  color: #01BAEF;
+  cursor:pointer;
+  display: none;
+}
 /* Hero Section */
 
 .section-hero {
@@ -190,7 +202,7 @@ body {
 .hero {
   max-width: 110rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 10rem 3.2rem 0 3.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 9.6rem;
@@ -262,6 +274,12 @@ body {
 .section-course {
   padding: 9.6rem 0;
   background-color: #FBFBFF;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
 }
 
 .course-card {
@@ -504,9 +522,8 @@ form {
   margin-top: 1.5rem;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .footer-list .footer-social {

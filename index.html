@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
@@ -27,12 +28,13 @@
 
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">Section 1</a></li>
-        <li><a class="main-nav-link" href="#">Section 2</a></li>
-        <li><a class="main-nav-link" href="#">Section 3</a></li>
-        <li><a class="main-nav-link nav-cta" href="#">Section 4</a></li>
+        <li><a class="main-nav-link" href="#home">Home</a></li>
+        <li><a class="main-nav-link" href="#courses">Courses</a></li>
+        <li><a class="main-nav-link nav-cta" href="#register">Register</a></li>
       </ul>
     </nav>
+
+    <i class="fa-solid fa-bars"></i>    
 
   </header>
 
@@ -40,9 +42,10 @@
 
   <main>
 
+
     <!-- Start Hero Section -->
 
-    <section class="section-hero">
+    <section class="section-hero" id="home">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">Start learning with us now</h1>
@@ -70,13 +73,13 @@
       </div>
     </section>
 
-    <section class="section-course">
+    <section class="section-course" id="courses">
       <div class="container">
         <span class="subheading">course</span>
         <h2 class="heading-secondary mt-sm mb-md">Start learning from experience</h2>
       </div>
 
-      <div class="container grid grid--3-cols">
+      <div class="container course-grid">
         <div class="course-card">
           <div class="course-card-img">
             <img
@@ -127,7 +130,7 @@
       </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="register">
       <div class="container">
         <div class="cta-container">
           <div class="cta-text-box">
@@ -219,6 +222,8 @@
     </div>
   </footer>
 
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
